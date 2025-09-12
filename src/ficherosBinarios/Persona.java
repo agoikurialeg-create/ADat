@@ -39,5 +39,11 @@ public class Persona implements Serializable{
 	public void setEmaila(String emaila) {
 		this.emaila = emaila;
 	}
+
+	@Override
+	public String toString() {
+		return "Persona [izena=" + izena + ", adina=" + adina + ", emaila=" + emaila + "]";
+	}
+	
 	
 }

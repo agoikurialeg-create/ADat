@@ -9,9 +9,9 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		File p1File = new File("C:\\Users\\2AM3-3\\eclipse-workspace\\pruebaAdat\\src\\ficherosBinarios\\p1.bit");
-		File p2File = new File("C:\\Users\\2AM3-3\\eclipse-workspace\\pruebaAdat\\src\\ficherosBinarios\\p2.bit");
-		File p3File = new File("C:\\Users\\2AM3-3\\eclipse-workspace\\pruebaAdat\\src\\ficherosBinarios\\p3.bit");
+		File p1File = new File("C:\\Users\\2AM3-3\\eclipse-workspace\\ProyectoAdat\\src\\ficherosBinarios\\p1.bit");
+		File p2File = new File("C:\\Users\\2AM3-3\\eclipse-workspace\\ProyectoAdat\\src\\ficherosBinarios\\p2.bit");
+		File p3File = new File("C:\\Users\\2AM3-3\\eclipse-workspace\\ProyectoAdat\\src\\ficherosBinarios\\p3.bit");
 
 		
 		Persona p1 = new Persona ("Ane", 22, "ane@ane.ane");
@@ -27,9 +27,12 @@ public class Main {
 	public static void gordePertsona(Persona persona, File fitxategia) {
 		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fitxategia))){
 			oos.writeObject(persona);
+			oos.close();
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
 
 }
+  
