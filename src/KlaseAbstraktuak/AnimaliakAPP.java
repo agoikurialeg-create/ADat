@@ -11,7 +11,7 @@ public class AnimaliakAPP {
 		ArrayList<Animalia> animalialist = new ArrayList<Animalia>();
 		animalialist.add(h1);
 		animalialist.add(h2);
-		animalialist.add(h3);
+		animalialist.add(h3); 
 		int dun = 0,gabe = 0;
 		for(Animalia  animalia : animalialist) {
 			System.out.println(animalia);
